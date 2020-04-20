@@ -8,13 +8,16 @@ object WorkingWithOptions {
   /**
     * Create and Option[String] containing the word 'foo'.
     */
-  lazy val optionFoo: Option[String] = ???
+  lazy val optionFoo: Option[String] = Some("foo")
 
   /**
     * Combine it with `optionFoo` with `optionBar` to produce
     * an Option[String] containing the word "foobar".
     */
-  lazy val optionSmooshed: Option[String] = ???
+  lazy val optionSmooshed: Option[String] = for {
+    foo <- optionFoo
+    bar <- optionBar
+  } yield (foo + bar)
 
   /**
     * Convert the List[Option[String]], `listOfOptions`, to an Option[List[String]]
@@ -30,7 +33,6 @@ object WorkingWithOptions {
     * @return
     */
   def valueFromOption(option: Option[String]): String = {
-
-    ???
+    option.getOrElse("oops!")
   }
 }
