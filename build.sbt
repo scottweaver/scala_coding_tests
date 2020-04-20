@@ -1,4 +1,4 @@
-scalaVersion := "2.12.11"
+scalaVersion = "2.12.11"
 
 scalacOptions += "-Ypartial-unification"
 
