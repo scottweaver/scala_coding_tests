@@ -17,7 +17,9 @@ class WorkingWithOptionsTest extends FunSpec with Matchers with OptionValues {
 
   it("`optionOfList` should contain the same values `listOfOptions") {
 
-    optionOfList shouldBe listOfOptions.sequence
+    optionOfList(listOfOptions) shouldBe listOfOptions.sequence
+
+    optionOfList(List.empty) shouldBe None
   }
 
   it("`fromOption` should return the expected string value.") {

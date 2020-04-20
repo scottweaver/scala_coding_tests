@@ -44,9 +44,9 @@ object WorkingWithLists {
     input.map { num =>
       num match {
         case num if (num % 3 == 0) && (num % 5 == 0) => "FizzBuzz"
-        case num if num % 3 == 0 => "Fizz"
-        case num if num % 5 == 0 => "Buzz"
-        case num => num.toString
+        case num if num % 3 == 0                     => "Fizz"
+        case num if num % 5 == 0                     => "Buzz"
+        case num                                     => num.toString
       }
     }
   }
