@@ -17,10 +17,11 @@ object WorkingWithOptions {
   lazy val optionSmooshed: Option[String] = ???
 
   /**
-    * Convert the List[Option[String]], `listOfOptions`, to an Option[List[String]]
+    * Convert the List[Option[String]], `input`, to an Option[List[String]]
     * HINT: You can use Cats for this if like. ;)
     */
-  lazy val optionOfList: Option[List[String]] = ???
+  // lazy val optionOfList: Option[List[String]] = {
+  def optionOfList(input: List[Option[String]]): Option[List[String]] = ???
 
   /**
     * Implement this method so that it returns the value contained within the argument
