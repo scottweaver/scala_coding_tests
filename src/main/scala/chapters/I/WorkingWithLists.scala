@@ -10,7 +10,7 @@ object WorkingWithLists {
   /**
     * Create a List of Int from 1 to 10
     */
-  lazy val listOfInts: List[Int] = ???
+  lazy val listOfInts: List[Int] = 1.to(10).toList
 
   /**
     * Given the `listOfInts`, produce a `List[String]` where each entry is the string representation of that Int.
