@@ -57,14 +57,3 @@ class WorkingWithListsTest extends FunSpec with Matchers {
   }
 
 }
-
-object WorkingWithListsTest {
-
-  def expectedFizzBuzz(input: List[Int]): List[String] =
-    input map {
-      case i if i % 3 + i % 5 == 0 => "FizzBuzz"
-      case i if i % 3 == 0         => "Fizz"
-      case i if i % 5 == 0         => "Buzz"
-      case i                       => i.toString
-    }
-}
