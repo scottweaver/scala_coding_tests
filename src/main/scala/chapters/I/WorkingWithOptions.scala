@@ -23,7 +23,7 @@ object WorkingWithOptions {
     * Convert the List[Option[String]], `listOfOptions`, to an Option[List[String]]
     * HINT: You can use Cats for this if like. ;)
     */
-  lazy val optionOfList: Option[List[String]] = ???
+  lazy val optionOfList: Option[List[String]] = Some(listOfOptions.flatten)
 
   /**
     * Implement this method so that it returns the value contained within the argument
